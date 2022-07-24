@@ -1,0 +1,342 @@
+/* Обнуление                                                                                   */
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+
+/*----------------------------------------------------------------------------------------*/
+
+body {
+	height: 100%;
+	color: #000;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.container{
+	max-width: 1170px; /* Ограничивающий контейнер */
+	margin: 0 auto;
+	box-sizing: content-box;
+}
+/* ----------------------------------------------------------------------------------------- */
+
+.header {
+	padding: 30px 55px 26px 55px;
+}
+
+.header__container {
+	display: flex;
+	height: 40px;
+	align-items: center;
+}
+
+.header__logo {
+	font-family: 'Rajdhani';
+	font-weight: 700;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #252A34;
+	line-height: 38px;
+}
+.header__logo, .color{
+	color: #FF2E63;
+}
+
+.menu__body {
+	flex: 1 1 auto;
+}
+
+.menu__list {
+	display: flex; /* Выстраиваем в ряд */
+	flex-wrap: wrap; /* При уменьшении экрана - перенос */
+	justify-content: center;
+	align-items: center;
+}
+
+.menu__item {}
+
+.menu__item:not(:last-child) {
+	margin: 0 30px 0 0; /* Cтавим отступы кроме последнего */
+}
+
+.menu__link {
+	font-weight: 600;
+	color: #252A34;
+	line-height: 19px;
+}
+
+.header__actions {
+	display: flex;
+}
+
+.header__button {
+	font-weight: 600;
+	font-size: 16px;
+	color: #FF2E63;
+	background-color: #FFFFFF;
+	line-height: 19px;
+	margin: 0 30px 0 0;
+}
+
+.button-border {
+	display: inline-block;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 19px;
+	border-radius: 5px;
+	padding: 10px 25px 10px 25px;	
+	color: #FFFFFF;
+	background-color: #FF2E63;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* PAGE                                                             */
+.page {
+	flex: 1 1 auto;
+	/* Позволяем увеличиваться, и футер будет внизу контейнера */
+}
+
+.page__main {}
+
+.main-block {
+	padding: 26px 55px 76px 55px;
+}
+
+.main-block_container {}
+
+.main-block__column {
+	display: flex;
+}
+
+/* разрешаем увеличиваться+уменьшаться и он будет якобы придавливать блок */
+.main-block__body {
+	flex: 1 1 auto;
+}
+
+.main-block__title {
+	width: 445px;
+	font-family: 'Rajdhani';
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 60px;
+	color: #343434;
+	padding: 95px 0 50px 0;
+}
+
+.main-block__button {
+	display: inline-block;
+	padding: 10px;
+	width: 120px;
+	height: 40px;
+	line-height: 22px;
+	background-color: #346CD9;
+	border-radius: 5px;
+	text-align: center;
+	margin-bottom: 110px;
+}
+
+.button-blue {
+	font-weight: 600;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+
+/* запрещаем увеличиваться+запрещаем уменьшаться и указываем конкретную величину в пикселях. */
+.main-block__banner {
+	display: flex;
+	margin: 73px 0 25px 0;
+}
+
+.banner-car {
+	flex: 0 0 750px;
+	height: 302px;
+}
+
+.banner-car img{
+	max-width: 750px;
+}
+
+.page__competitions {}
+
+.competitions {}
+
+.competitions__container {}
+
+.container {}
+
+.competitions__title {
+	font-family: 'Rajdhani';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 46px;
+	color: #343434;
+	margin: 0 0 30px 0;
+}
+
+.competitions__body {
+	display: flex;
+	justify-content: center;
+}
+
+.competitions__column {
+	flex: 0 1 25%; /* увеличиваться нельзя,уменьшаться можно,размер 50% */
+}
+
+.competitions__column:not(:last-child) {
+	margin: 0 30px 0 0; /* Cтавим отступы кроме последнего */
+}
+
+.competitions__item {}
+
+.item {}
+
+.item__row {
+}
+/* запрет на увеличение,
+запрет на умеьшение размер 270px. Создали фиксированный размер колонки */
+.item__image {
+	flex: 0 0 270px;
+}
+
+.item__body {
+	flex: 1 1 auto; /* позволяем и увеличиваться и уменьшаться размер авто */
+	margin: 20px 0 11px 20px;
+}
+
+.item__title {
+	font-family: 'Rajdhani';
+	font-weight: 700;
+	font-size: 20px;
+	color: #252A34;
+	margin: 0 0 5px 0;
+}
+
+.item__price {
+	font-family: 'Rajdhani';
+	font-weight: 700;
+	font-size: 30px;
+	color: #FF2E63;
+	margin: 0 0 15px 0;
+}
+.color-td{
+	font-family: 'Rajdhani';
+	font-weight: 500;
+	font-size: 20px;
+	text-decoration-line: line-through;
+	color: #999999;
+}
+
+.item__tickets {
+	display: flex;
+	align-items: center;
+}
+
+.item__text {
+	color: #343434;
+	margin: 0 62px 0 0;
+}
+
+.item__button {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: #346CD9;
+	border-radius: 10px 0px;
+}
+.item__button img{
+	padding: 14px 10px;;
+}
+
+
+.footer {}
