@@ -186,21 +186,22 @@ body {
 	/* Позволяем увеличиваться, и футер будет внизу контейнера */
 }
 
-.page__main {}
+/* PAGE__BANNER                                                      */
+.page__banner {}
 
-.main-block {
+.banner {
 }
 
-.main-block_container {}
+.banner__container {}
 
-.main-block__column {
+.banner__column {
 	display: flex;
 }
 
-.main-block__body {
+.banner__body {
 }
 
-.main-block__title {
+.banner__title {
 	width: 445px;
 	font-family: 'Rajdhani';
 	font-weight: 700;
@@ -210,7 +211,7 @@ body {
 	padding: 95px 0 50px 0;
 }
 
-.main-block__button {
+.banner__button {
 	display: inline-block;
 	padding: 10px;
 	width: 120px;
@@ -228,28 +229,22 @@ body {
 	color: #FFFFFF;
 }
 
-.main-block__banner {
-	background: linear-gradient(131.47deg, rgba(52, 108, 217, 0) 13.96%, rgba(52, 108, 217, 0.25) 85.97%);
+.banner__image {
+	position: relative;
+	
+}
+
+.banner__image img{
+	max-width: 742px;
 	padding: 73px 0 25px 0;
 }
 
-.banner-car {
-	flex: 0 0 750px; /* запрещаем увеличиваться+запрещаем уменьшаться 
-	и указываем конкретную величину в пикселях. */
-	height: 302px;
-}
-
-.banner-car img{
-	max-width: 750px;
-}
-
+/* PAGE__COMPETITIONS                                                      */
 .page__competitions {}
 
 .competitions {}
 
 .competitions__container {}
-
-.container {}
 
 .competitions__title {
 	font-family: 'Rajdhani';
@@ -263,35 +258,21 @@ body {
 
 .competitions__body {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 }
 
-.competitions__column {
-	flex: 0 1 25%; /* увеличиваться нельзя,уменьшаться можно,размер 50% */
+.competitions__cards {
 }
 
-.competitions__column:not(:last-child) {
-	margin: 0 30px 0 0; /* Cтавим отступы кроме последнего */
+.card__brand {
+	flex: 0 0 270px; /* запрет на увеличение,запрет на умеьшение размер 270px. Создали фиксированный размер колонки */
 }
 
-.competitions__item {}
-
-.item {}
-
-.item__row {
-}
-/* запрет на увеличение,
-запрет на умеьшение размер 270px. Создали фиксированный размер колонки */
-.item__image {
-	flex: 0 0 270px;
-}
-
-.item__body {
-	flex: 1 1 auto; /* позволяем и увеличиваться и уменьшаться размер авто */
+.card__body {
 	margin: 20px 0 11px 20px;
 }
 
-.item__title {
+.card__title {
 	font-family: 'Rajdhani';
 	font-weight: 700;
 	font-size: 20px;
@@ -299,13 +280,13 @@ body {
 	margin: 0 0 5px 0;
 }
 
-.item__price {
+.card__price {
 	font-family: 'Rajdhani';
 	font-weight: 700;
 	font-size: 30px;
 	color: #FF2E63;
-	margin: 0 0 15px 0;
 }
+
 .color-td{
 	font-family: 'Rajdhani';
 	font-weight: 500;
@@ -314,24 +295,26 @@ body {
 	color: #999999;
 }
 
-.item__tickets {
+.card__tickets {
 	display: flex;
+	justify-content: flex-end;
 	align-items: center;
 }
 
-.item__text {
+.card__text {
 	color: #343434;
-	margin: 0 62px 0 0;
+	margin: 0 auto 0 0;
 }
 
-.item__button {
+.card__button {
 	display: inline-block;
 	width: 40px;
 	height: 40px;
 	background: #346CD9;
 	border-radius: 10px 0px;
 }
-.item__button img{
+
+.card__button img{
 	padding: 14px 10px;;
 }
 
