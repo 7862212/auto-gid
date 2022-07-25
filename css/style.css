@@ -189,7 +189,6 @@ body {
 .page__main {}
 
 .main-block {
-	padding: 26px 55px 76px 55px;
 }
 
 .main-block_container {}
@@ -198,9 +197,7 @@ body {
 	display: flex;
 }
 
-/* разрешаем увеличиваться+уменьшаться и он будет якобы придавливать блок */
 .main-block__body {
-	flex: 1 1 auto;
 }
 
 .main-block__title {
@@ -231,14 +228,14 @@ body {
 	color: #FFFFFF;
 }
 
-/* запрещаем увеличиваться+запрещаем уменьшаться и указываем конкретную величину в пикселях. */
 .main-block__banner {
-	display: flex;
-	margin: 73px 0 25px 0;
+	background: linear-gradient(131.47deg, rgba(52, 108, 217, 0) 13.96%, rgba(52, 108, 217, 0.25) 85.97%);
+	padding: 73px 0 25px 0;
 }
 
 .banner-car {
-	flex: 0 0 750px;
+	flex: 0 0 750px; /* запрещаем увеличиваться+запрещаем уменьшаться 
+	и указываем конкретную величину в пикселях. */
 	height: 302px;
 }
 
